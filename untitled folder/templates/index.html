@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="text-center">
+    <!-- It's Your Day Part -->
+    <div id="its-your-day">
+        <img src="{{ url_for('static', filename='images/candle.png') }}" alt="Candle" class="candle-image">
+        <h2 class="its-your-day-word">IT'S YOUR DAY!!</h2>
+    </div>
+    
+    <!-- Photo and Happy Birthday Cindy Part -->
+    <div id="birthday-message" class="d-flex align-items-center justify-content-center">
+        <img src="{{ url_for('static', filename='images/cindy.jpeg') }}" alt="Cindy" class="cindy-photo">
+        <div>
+            <h2>Happy Birthday</h2>
+            <h2>Cindy Elrika</h2>
+            <br>
+            <p>Cheers to another year of wonderful moments and memories! 🎈</p>
+        </div>
+    </div>
+    
+    <!-- Wishes Part -->
+    <div id="birthday-wishes">
+        <h3 class="wish-title">Wishes</h3>
+        <img class="wordcloud" src="{{ url_for('static', filename='images/wordcloud.png') }}" alt="Word Cloud">
+        {% for entry in wishes %}
+        <div class="wish-entry">
+            <p class="wish">{{ entry.wish.replace('\\n', '<br>')|safe }}</p>
+            <p class="name">{{ entry.name }}</p>
+        </div>
+        {% else %}
+        <p>No wishes yet.</p>
+        {% endfor %}
+    </div>
+    <div id="wordfreq">
+        <h3 class="wordfreq-title">Encouragement Words Frequencies</h3>
+        <img class="wordfreq-img" src="{{ url_for('static', filename='images/word_freqs.png') }}" alt="Word Frequencies">
+    </div>
+</div>
+{% endblock %}

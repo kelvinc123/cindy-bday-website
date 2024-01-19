@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Lemon';
+    src: url('../fonts/Lemon-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url('../fonts/DancingScript-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Salsa';
+    src: url('../fonts/Salsa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url('../fonts/LuckiestGuy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* FDF2EC */
+/* General body styling */
+body {
+    background-color: #F8F6EB; /* This pink background matches the main background of the design */
+    color: #333; /* General text color, assuming a dark grey */
+    font-family: 'Arial', sans-serif; /* Common font family */
+}
+
+/* Container adjustments for centering */
+.container {
+    max-width: 100%; /* Adjust based on the width of your design */
+}
+
+/* It's Your Day Part */
+#its-your-day {
+    background-color: #F8F6EB; /* Light pink background for the 'It's Your Day' section */
+    color: #A1A1A1; /* Grey text color */
+    min-height: 120vh; /* Full viewport height */
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Lemon', Arial, sans-serif;
+}
+
+.its-your-day-word {
+    font-size: 100px;
+}
+
+/* Candle Image */
+.candle-image {
+    width: 400px; /* Adjust to the size of your design */
+    height: auto;
+    margin: 0 auto 100px; /* Centers the image and adds margin to the bottom */
+}
+
+/* Happy Birthday Cindy Part */
+#birthday-message {
+    background-color: #FDF2EC; /* Background color as per the design */
+    min-height: 110vh; /* Full viewport height */
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically centers the flex items */
+    justify-content: center; /* Horizontally centers the flex items */
+    border-radius: 20px; /* Rounded corners as in the second image */
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cindy-photo {
+    width: auto; /* Adjust to maintain the aspect ratio */
+    height: 450px; /* Adjust based on your design */
+    margin-right: 100px; /* Adds some space between the photo and the text */
+    border-radius: 20px;
+}
+
+#birthday-message h2 {
+    color: #FDA172; /* A shade of grey that provides contrast */
+    margin: 0; /* Remove default margins */
+    font-size: 5rem; /* Adjust the font size as per your design */
+    font-family: 'DancingScript', Arial, sans-serif;
+}
+
+#birthday-message p {
+    color: #FDA172; /* A shade of grey that provides contrast */
+    margin: 0; /* Remove default margins */
+    font-size: 2rem; /* Adjust the font size as per your design */
+    font-family: 'Salsa', Arial, sans-serif;
+}
+
+/* Wishes Section */
+#birthday-wishes {
+    padding: 20px;
+    padding-top: 50px;
+    max-width: 80%;
+    margin: auto; /* Centers the block */
+}
+
+.wish-title {
+    text-align: center; /* Align text to the left */
+    color: #363636;
+    font-family: 'LuckiestGuy', Arial, sans-serif; /* Assuming Arial is the desired font */
+    font-size: 5rem;
+    padding-bottom: 100px;
+    background: linear-gradient(45deg, #f6d365, #fda085);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.wish-entry {
+    /* background-color: #FFFEE0; White background for the wish entry */
+    background-color: #FAEDD7;
+    padding: 20px; /* More padding for a spacious look */
+    margin-bottom: 15px; /* Space between entries */
+    border-radius: 20px; /* Rounded corners as in the second image */
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Assuming Arial is the desired font */
+    font-size: 1rem; /* Adjust the font size as needed */
+    border: solid 1px #e1e1e1; /* Subtle border color */
+}
+
+.wish {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px; /* Space between the wish and the name */
+    color: #777B7E
+}
+
+.name {
+    text-align: right; /* Align the name to the right */
+    font-weight: bold;
+    margin-top: 10px; /* Space between the wish and the name */
+    color: #48494B
+}
+
+.wordcloud {
+    margin-top: 10px;
+    width: 1000px;
+    margin-bottom: 100px;
+}
+
+#wordfreq {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.wordfreq-title {
+    font-family: 'LuckiestGuy', Arial, sans-serif; /* Assuming Arial is the desired font */
+    font-size: 4rem;
+}
+
+.wordfreq-img {
+    width: 800px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* More padding on smaller screens */
+    }
+    .cindy-photo,
+    .candle-image {
+        width: 100%; /* Full width on smaller screens */
+        height: auto;
+    }
+}
