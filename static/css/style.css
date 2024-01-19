@@ -172,6 +172,7 @@ body {
     .cindy-photo, .candle-image {
         margin-right: 0; /* Remove the margin if it's no longer needed */
         max-width: 100%;
+        height: auto; /* Adjust the height automatically to maintain aspect ratio */
     }
 }
 
