@@ -32,6 +32,7 @@ body {
     background-color: #F8F6EB; /* This pink background matches the main background of the design */
     color: #333; /* General text color, assuming a dark grey */
     font-family: 'Arial', sans-serif; /* Common font family */
+    height: auto;
 }
 
 /* Container adjustments for centering */
@@ -164,12 +165,28 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px; /* More padding on smaller screens */
+    #birthday-message {
+        flex-direction: column;
+        align-items: center; /* Align items for vertical stacking */
     }
-    .cindy-photo,
-    .candle-image {
-        width: 100%; /* Full width on smaller screens */
-        height: auto;
+    .cindy-photo, .candle-image {
+        margin-right: 0; /* Remove the margin if it's no longer needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .wordcloud, .wordfreq-img {
+        max-width: 100%; /* On smaller screens, the max width should be 100% of the viewport */
+        margin-bottom: 50px;
+    }
+    /* Other responsive adjustments */
+}
+
+@media (max-width: 768px) {
+    .its-your-day-word, .wish-title, .wordfreq-title {
+        font-size: 2.5rem; /* Adjust the size to fit better on smaller screens */
+    }
+    #birthday-message h2, #birthday-message p {
+        font-size: 1.5rem;
     }
 }
